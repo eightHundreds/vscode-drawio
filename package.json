@@ -2,6 +2,8 @@
   "name": "vscode-drawio",
   "displayName": "vscode-drawio",
   "description": "",
+  "publisher": "eightHundreds",
+  "enableProposedApi": true,
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.43.0"

@@ -1,0 +1,64 @@
+CACHE MANIFEST
+
+# THIS FILE WAS GENERATED. DO NOT MODIFY!
+# 11/12/2019 08:50 AM
+
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/app.html
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/index.html?offline=1
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/index.html?offline=1&ui=min
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/index.html?offline=1&https=0
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/offline.html
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/open.html
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/js/app.min.js
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/js/shapes.min.js
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/js/stencils.min.js
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/js/extensions.min.js
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/js/diagramly/ElectronApp.js
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/styles/grapheditor.css
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/styles/atlas.css
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/styles/dark.css
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/favicon.ico
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/css/common.css
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/maximize.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/minimize.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/close.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/resize.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/separator.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/window.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/window-title.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/button.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/mxgraph/images/point.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/resources/dia.txt
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/delete.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/droptarget.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/help.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/download.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/drawlogo.svg
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/drawlogo-gray.svg
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/drawlogo-text-bottom.svg
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/logo-flat.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/osa_drive-harddisk.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/osa_database.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/glyphicons_star.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/logo-confluence.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/logo-jira.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/clear.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/spin.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/checkmark.gif
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/favicon-16x16.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/favicon-32x32.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/android-chrome-192x192.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/android-chrome-512x512.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/glyphicons_google.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/glyphicons_facebook.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/glyphicons_twitter.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/glyphicons_github.png
+vscode-resource:/Users/ming/MC/notebook/test/myFakeDir/.notebook/drawioApp/images/hs.png
+
+# Redirect app to app.html which redirects to index.html?offline=1
+# this is required to get the URL parameters into the index page.
+FALLBACK:
+app app.html
+
+NETWORK:
+*
