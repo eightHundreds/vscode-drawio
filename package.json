@@ -7,11 +7,14 @@
   "engines": {
     "vscode": "^1.44.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eightHundreds/vscode-notebook"
+  },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-drawio.open",
     "onCustomEditor:vscode-drawio.editor"
   ],
   "main": "./out/extension.js",
@@ -27,15 +30,9 @@
         ]
       }
     ],
-    "commands": [
-      {
-        "command": "vscode-drawio.helloWorld",
-        "title": "Hello World"
-      }
-    ],
-    "configuration":{
+    "configuration": {
       "title": "vscode-drawio",
-      "type":"object",
+      "type": "object",
       "properties": {
         "vscode-drawio.debug": {
           "type": "boolean",
