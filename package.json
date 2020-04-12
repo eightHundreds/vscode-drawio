@@ -3,7 +3,7 @@
   "displayName": "vscode-drawio",
   "description": "",
   "publisher": "eightHundreds",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.44.0"
   },
