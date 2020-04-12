@@ -57,12 +57,6 @@
             // Path for images inside the diagram
             window.GRAPH_IMAGE_PATH = "#vscode-root#/img";
             window.ICONSEARCH_PATH = "https://www.draw.io/iconSearch";
-            // window.ICONSEARCH_PATH ||
-            // ((navigator.userAgent.indexOf("MSIE") >= 0 ||
-            //     urlParams["dev"]) &&
-            // window.location.protocol != "file:"
-            //     ? "iconSearch"
-            //     : "https://www.draw.io/iconSearch");
             window.TEMPLATE_PATH = "#vscode-root#/templates";
             window.NEW_DIAGRAM_CATS_PATH = "#vscode-root#/newDiagramCats";
             window.PLUGINS_BASE_PATH = "#vscode-root#/";
@@ -89,18 +83,24 @@
                 },
                 set() {}
             });
+
+            #init-localStorage#
+            
             const mockLs = {
                 getItem(key) {
-                    console.log("ls: get", key);
-                    // TODO 持久化到vscode存储
+                    console.log("localStorage: get", key);
                     const previousState = vscode.getState() || {};
                     return previousState[key];
                 },
                 setItem(key, val) {
-                    console.log("ls: set", key, val);
+                    console.log("localStorage: set", key, val);
                     const previousState = vscode.getState() || {};
                     previousState[key] = val;
                     vscode.setState(previousState);
+                    vscode.postMessage({
+                        type:'setting',
+                        data: previousState
+                    })
                 }
             };
             localStorage = mockLs;
@@ -152,25 +152,12 @@
              * - networkshapes=1: For testing network shapes (temporary)
              */
             var urlParams = (function() {
-                var result = new Object();
-                var params = window.location.search.slice(1).split("&");
-
-                for (var i = 0; i < params.length; i++) {
-                    idx = params[i].indexOf("=");
-
-                    if (idx > 0) {
-                        result[params[i].substring(0, idx)] = params[
-                            i
-                        ].substring(idx + 1);
-                    }
-                }
-
                 // embed=1&ui=atlas&spin=1&proto=json&lang
                 return {
                     ui: "atlas",
                     embed: 1,
                     spin: 1,
-                    proto: "json"
+                    proto: "json",
                 };
             })();
 
@@ -214,11 +201,6 @@
                                     window.location.host.length +
                                     2
                             );
-
-                        // // Redirects if href changes
-                        // if (href != window.location.href) {
-                        //     window.location.href = href;
-                        // }
                     } else if (!mxIsElectron5) {
                         // It's electron, but v3 or lower
                         window.location.href =
@@ -260,14 +242,6 @@
 
                 addMeta("apple-mobile-web-app-title", name);
                 addMeta("application-name", name);
-
-                // if (mxIsElectron5) {
-                //     addMeta(
-                //         null,
-                //         "default-src 'self' 'unsafe-inline'; connect-src 'self' https://*.draw.io; img-src * data:; media-src *; font-src *",
-                //         "Content-Security-Policy"
-                //     );
-                // }
             })();
         </script>
         <link

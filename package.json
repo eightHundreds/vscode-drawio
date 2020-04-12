@@ -32,7 +32,18 @@
         "command": "vscode-drawio.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "configuration":{
+      "title": "vscode-drawio",
+      "type":"object",
+      "properties": {
+        "vscode-drawio.debug": {
+          "type": "boolean",
+          "default": false,
+          "description": "Specifies whether to show debug log"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
